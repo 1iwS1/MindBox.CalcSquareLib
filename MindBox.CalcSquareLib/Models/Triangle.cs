@@ -1,6 +1,9 @@
-﻿namespace MindBox.CalcSquareLib.Models
+﻿using MindBox.CalcSquareLib.Abstractions;
+
+
+namespace MindBox.CalcSquareLib.Models
 {
-  public class Triangle : IShape
+    public class Triangle : IShape, ITriangleShape
   {
     public double[] Sides { get; private set; }
 

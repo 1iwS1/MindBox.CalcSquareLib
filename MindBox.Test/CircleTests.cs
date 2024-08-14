@@ -1,10 +1,10 @@
-using MindBox.CalcSquareLib;
+using MindBox.CalcSquareLib.Abstractions;
 using MindBox.CalcSquareLib.Models;
 
 
 namespace MindBox.Test
 {
-  [TestClass]
+    [TestClass]
   public class CircleTests
   {
     [TestMethod]

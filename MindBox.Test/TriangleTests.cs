@@ -1,4 +1,4 @@
-﻿using MindBox.CalcSquareLib;
+﻿using MindBox.CalcSquareLib.Abstractions;
 using MindBox.CalcSquareLib.Models;
 
 
@@ -34,7 +34,7 @@ namespace MindBox.Test
     {
       // Act
       double[] doubles = { 9, 12, 15 };
-      IShape triangle = new Triangle(doubles);
+      ITriangleShape triangle = new Triangle(doubles);
 
       // Assert
       Assert.IsTrue(triangle.IsRight());
@@ -45,7 +45,7 @@ namespace MindBox.Test
     {
       // Act
       double[] doubles = { 5, 2, 4 };
-      IShape triangle = new Triangle(doubles);
+      ITriangleShape triangle = new Triangle(doubles);
 
       // Assert
       Assert.IsFalse(triangle.IsRight());

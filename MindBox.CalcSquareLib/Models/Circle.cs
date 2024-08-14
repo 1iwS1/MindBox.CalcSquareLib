@@ -1,6 +1,9 @@
-﻿namespace MindBox.CalcSquareLib.Models
+﻿using MindBox.CalcSquareLib.Abstractions;
+
+
+namespace MindBox.CalcSquareLib.Models
 {
-  public class Circle : IShape
+    public class Circle : IShape
   {
     public double Radius { get; private set; }
 
